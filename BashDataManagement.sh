@@ -10,7 +10,7 @@ pwd
 ## creat a directory dedicated to the training
 mkdir BashDataManagement
 ## creat a mounting point to the directory "BashDataManagment" from your browser to have access to data independantly of the shell
-sftp://10.10.63.118/biowork/bioadmin-svil/n.radomski/BashDataManagement
+sftp://??.??.??.???/path/to/user/BashDataManagement
 
 # retrieve input data and creat a directory to storage output data
 ## move inside the working area
