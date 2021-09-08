@@ -4,7 +4,7 @@ The Bash script BashDataManagement.sh aims at presenting the most useful Bash co
 Three unit provide genomics data and dataframes.
 - The unit 1 is a bacteriological unit providing results of genome typing
 - The unit 2 is a sequencing unit providing reads with expected depth of coverage
-- The unit 3 is a bioinformatics unit measuring the depth of coverage and the GC %
+- The unit 3 is a bioinformatics unit measuring the depth of coverage and GC %
 # Objectives
 The objectives of the three units aims at answering the questions below.
 - Is there a correlation between the expected and measures depth of coverage?
