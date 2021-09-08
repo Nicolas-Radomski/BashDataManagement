@@ -136,5 +136,7 @@ more output/clean-dataframe.tsv
 cat output/clean-dataframe.tsv | wc -l
 ## check the number of colomns of the file clean-dataframe.tsv (i.e. 5 colomns)
 awk -F'\t' '{print NF}' output/clean-dataframe.tsv | sort -nu | tail -n 1
+## rename the file clean-dataframe.tsv as dataframe.tsv
+mv clean-dataframe.tsv clean-dataframe.tsv dataframe.tsv
 ## save the file clean-dataframe.tsvin your computeur
-scp output/clean-dataframe.tsv user@???.???.?.??:/path/to/RstudioWorkingDirectory/BashDataManagement/.
+scp output/dataframe.tsv user@???.???.?.??:/path/to/RstudioWorkingDirectory/BashDataManagement/.
