@@ -108,5 +108,5 @@ ddply(data_long, .(genome_type), summarize,  mean_value=mean(GC_content), standa
 #3           C     37.910         0.01224745
 
 # => There is not significant differences (p-value = 0.8125) of GC content between genome type A (38.132±0.013) and B (38.134±0.011)
-# => There is significant differences (p-value < 0.05791) of GC content between genome type C (37.910±0.012) and B (38.134±0.011)
+# => There is significant differences (p-value = 0.05791) of GC content between genome type C (37.910±0.012) and B (38.134±0.011)
 # => There is significant differences (p-value = 0.05447) of GC content between genome type C (37.910±0.012) and A (38.132±0.013)
