@@ -26,14 +26,9 @@ The R script BashDataManagement.R aims at performing statistical analyses from t
 - scp
 ## R libraries
 - ggplot2
-- plyr
+- ggpmisc
 - reshape2
-- tidyr
-- AER
-- spgs
-- usethis
-- devtools
-- ggbiplot
+- plyr
 # Objectives
 The objectives of three units aims at answering the two questions below.
 - Is there a correlation between the expected and estimated depth of coverage?
@@ -51,6 +46,13 @@ gedit BashDataManagement.sh
 ```
 rstudio BashDataManagement.R
 ```
+# Expected conclusions
+The objectives of three units aims at answering the two questions below.
+- There is a significant (p-value < 2.2e-16) correlation (R2=99.98%) between the expected and estimated depth of coverage
+- There is not significant differences (p-value = 0.8125) of GC content between genome type A (38.132±0.013) and B (38.134±0.011)
+- There is significant differences (p-value < 0.05791) of GC content between genome type C (37.910±0.012) and B (38.134±0.011)
+- There is significant differences (p-value = 0.05447) of GC content between genome type C (37.910±0.012) and A (38.132±0.013)
+
 # Illustration
 ![PCA figure](https://github.com/Nicolas-Radomski/BashDataManagement/blob/main/illustration.png)
 # Reference
