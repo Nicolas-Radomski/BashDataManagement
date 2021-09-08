@@ -3,6 +3,7 @@ The Bash script BashDataManagement.sh aims at presenting the most useful Bash co
 The R script BashDataManagement.R aims at performing statistical analyses from the output of the Bash script BashDataManagement.sh.
 # Dependencies
 ## Bash commands
+- gedit (text editor)
 - ssh (secure shell)
 - cd (change current working directory)
 - pwd (print working directory)
