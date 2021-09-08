@@ -3,27 +3,29 @@ The Bash script BashDataManagement.sh aims at presenting the most useful Bash co
 The R script BashDataManagement.R aims at performing statistical analyses from the output of the Bash script BashDataManagement.sh.
 # Dependencies
 ## Bash commands
-- ssh
-- cd
-- pwd
-- mkdir
-- cp
-- unzip
-- rm
-- chmod
-- ls
-- more
-- for
-- awk
-- grep
-- cat
-- sed
-- sort
-- head
-- cut
-- join
-- touch
-- scp
+- ssh (secure shell)
+- cd (change current working directory)
+- pwd (print working directory)
+- mkdir (make directory)
+- cp (copy)
+- unzip (extract files from a ZIP archive)
+- rm (remove)
+- chmod (change mode)
+- ls (list)
+- more (more)
+- for (for)
+- awk (Alfred Aho, Peter Weinberger, Brian Kernighan)
+- grep (global regular expression print)
+- cat (concatenate)
+- sed (stream editor)
+- sort (sort)
+- head (head)
+- cut (cut)
+- join (join)
+- touch (update the access date)
+- echo (prints text to the terminal)
+- mv (move)
+- scp (secure copy protocol)
 ## R libraries
 - ggplot2
 - ggpmisc
