@@ -18,7 +18,7 @@ cd BashDataManagement
 ## unpack the GitHub repository into a directory called repository
 git clone https://github.com/Nicolas-Radomski/BashDataManagement.git repository
 ## copy the directory data inside the working area
-cp /path/to/user/BashDataManagement/repository/input.zip .
+cp repository/input.zip .
 ## decompress the input.zip
 unzip input.zip
 ## remove the useless directory called repository
