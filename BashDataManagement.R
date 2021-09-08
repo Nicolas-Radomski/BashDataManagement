@@ -19,7 +19,7 @@ library(reshape2)
 library(plyr)
 
 # read dataframe
-data_long = read.table("clean-dataframe.tsv", dec = ".", header=TRUE, sep = "\t", quote = "")
+data_long = read.table("dataframe.tsv", dec = ".", header=TRUE, sep = "\t", quote = "")
 
 # check dimension
 dim(data_long)
