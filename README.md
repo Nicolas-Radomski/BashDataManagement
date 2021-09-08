@@ -30,7 +30,7 @@ The R script BashDataManagement.R aims at performing statistical analyses from t
 - reshape2
 - plyr
 # Objectives
-The objectives of three units aims at answering the two questions below.
+The objectives of three units aim at answering the questions below.
 - Is there a correlation between the expected and estimated depth of coverage?
 - Are there significance differences between GC% of genome types?
 # Backgroud
