@@ -48,7 +48,7 @@ The three laboratory units provided genomics data and dataframes.
 ```
 gedit BashDataManagement.sh
 ```
-# From the R script with RStudio
+## From the R script with RStudio
 ```
 rstudio BashDataManagement.R
 ```
@@ -57,7 +57,7 @@ rstudio BashDataManagement.R
 ```
 sh BashDataManagement.sh
 ```
-# From the R script with R
+## From the R script with R
 ```
 r BashDataManagement.R
 ```
