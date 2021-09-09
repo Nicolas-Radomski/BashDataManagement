@@ -1,5 +1,6 @@
 # Usage
-- The Bash (Bourne Again Shell) script BashDataManagement.sh aims at presenting the most useful Bash commands to manage genomics data and dataframes from different sources.
+The repository BashDataManagement provides key elements and training exercises to manage genomics data and dataframes through Bash (Bourne Again Shell) in the framework of a imaginary collaborative project between lab units dealing with fictitious input data.
+- The Bash script BashDataManagement.sh aims at presenting the most useful Bash commands to manage genomics data and dataframes from different sources.
 - The R script BashDataManagement.R aims at performing statistical analyses from the output of the Bash script BashDataManagement.sh.
 # Dependencies
 ## Bash commands
