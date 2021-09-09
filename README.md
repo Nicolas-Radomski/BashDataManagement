@@ -43,7 +43,7 @@ The three laboratory units provided genomics data and dataframes.
 - The unit 1 is a bacteriological unit providing results of genome typing (i.e. dataframe-unit1-transposed.tsv)
 - The unit 2 is a sequencing unit providing reads with expected depth of coverage (i.e. dataframe-unit2.csv)
 - The unit 3 is a bioinformatics unit estimating the depth of coverage and GC % (i.e. files with the extension .unit3)
-# Launch the commands one after the other and adapt the IPs of connection and paths of working directory
+# Launch the commands one after the other and adapt the IPs of connection and paths of working directories
 ## From the Bash script with Gedit
 ```
 gedit BashDataManagement.sh
