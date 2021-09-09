@@ -1,3 +1,7 @@
+#### Header to launch the whole Bash script with sh ####
+#!/bin/bash
+set -euo pipefail
+
 #### Bash-based data management ####
 
 # connect to a server and creat a mounting point to a personnal working area
@@ -115,14 +119,14 @@ cat output/clean-dataframe-unit3.tsv | wc -l
 ## check the number of colomns of the file clean-dataframe-unit3.tsv (i.e. 3 colomns)
 awk -F'\t' '{print NF}' output/clean-dataframe-unit3.tsv | sort -nu | tail -n 1
 
-# joint the clean dataframes from the three units
+# join the clean dataframes from the three units
 ## remove headers of dataframes
 sed '1d' output/clean-dataframe-unit1.tsv > output/clean-dataframe-unit1-noheader.tsv
 sed '1d' output/clean-dataframe-unit2.tsv > output/clean-dataframe-unit2-noheader.tsv
 sed '1d' output/clean-dataframe-unit3.tsv > output/clean-dataframe-unit3-noheader.tsv
-## joint the files clean-dataframe-unit1-noheader.tsv and clean-dataframe-unit2-noheader.tsv
+## join the files clean-dataframe-unit1-noheader.tsv and clean-dataframe-unit2-noheader.tsv
 join -t $'\t' -1 1 -2 1 output/clean-dataframe-unit1-noheader.tsv output/clean-dataframe-unit2-noheader.tsv -a 2 > output/clean-dataframe-unit1-unit2-noheader.tsv
-## joint of the files output/clean-dataframe-unit1-unit2-noheader.tsv and clean-dataframe-unit3-noheader.tsv
+## join of the files output/clean-dataframe-unit1-unit2-noheader.tsv and clean-dataframe-unit3-noheader.tsv
 join -t $'\t' -1 1 -2 1 output/clean-dataframe-unit1-unit2-noheader.tsv output/clean-dataframe-unit3-noheader.tsv -a 2 > output/clean-dataframe-unit1-unit2-unit3-noheader.tsv
 ## creat a header with colomns of interest
 touch output/header-clean-dataframe.csv | echo sample,genome_type,expected_depth,GC_content,estimated_depth >> output/header-clean-dataframe.csv
@@ -137,6 +141,6 @@ cat output/clean-dataframe.tsv | wc -l
 ## check the number of colomns of the file clean-dataframe.tsv (i.e. 5 colomns)
 awk -F'\t' '{print NF}' output/clean-dataframe.tsv | sort -nu | tail -n 1
 ## rename the file clean-dataframe.tsv as dataframe.tsv
-mv clean-dataframe.tsv clean-dataframe.tsv dataframe.tsv
+mv output/clean-dataframe.tsv output/dataframe.tsv
 ## save the file clean-dataframe.tsvin your computeur
 scp output/dataframe.tsv user@???.???.?.??:/path/to/RstudioWorkingDirectory/BashDataManagement/.
