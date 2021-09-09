@@ -1,37 +1,38 @@
 # Usage
-The Bash script BashDataManagement.sh aims at presenting the most useful Bash commands to manage genomics data and dataframes from different sources.
-The R script BashDataManagement.R aims at performing statistical analyses from the output of the Bash script BashDataManagement.sh.
+- The Bash (Bourne Again Shell) script BashDataManagement.sh aims at presenting the most useful Bash commands to manage genomics data and dataframes from different sources.
+- The R script BashDataManagement.R aims at performing statistical analyses from the output of the Bash script BashDataManagement.sh.
 # Dependencies
 ## Bash commands
-- gedit (text editor)
-- ssh (secure shell)
-- cd (change current working directory)
-- pwd (print working directory)
-- mkdir (make directory)
-- cp (copy)
-- unzip (extract files from a ZIP archive)
-- rm (remove)
-- chmod (change mode)
-- ls (list)
-- more (more)
-- for (for)
 - awk (Alfred Aho, Peter Weinberger, Brian Kernighan)
-- grep (global regular expression print)
 - cat (concatenate)
+- cut (cut)
+- cd (change current working directory)
+- chmod (change mode)
+- cp (copy)
+- echo (prints text to the terminal)
+- for (for)
+- gedit (text editor)
+- git
+- grep (global regular expression print)
+- head (head)
+- join (join)
+- ls (list)
+- mkdir (make directory)
+- more (more)
+- mv (move)
+- pwd (print working directory)
+- rm (remove)
 - sed (stream editor)
 - sort (sort)
-- head (head)
-- cut (cut)
-- join (join)
-- touch (update the access date)
-- echo (prints text to the terminal)
-- mv (move)
 - scp (secure copy protocol)
+- ssh (secure shell)
+- touch (update the access date)
+- unzip (extract files from a ZIP archive)
 ## R libraries
 - ggplot2
 - ggpmisc
-- reshape2
 - plyr
+- reshape2
 # Objectives
 The objectives of three laboratory units aim at answering the questions below.
 - Is there a correlation between the expected and estimated depth of coverage?
