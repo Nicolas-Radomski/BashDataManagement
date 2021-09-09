@@ -1,4 +1,5 @@
 #### Header to launch the whole Bash script with sh ####
+
 #!/bin/bash # shebang in the first line
 set -euo pipefail # exit with a non-zero status in the second line
 
