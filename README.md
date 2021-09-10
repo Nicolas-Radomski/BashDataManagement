@@ -44,7 +44,7 @@ The three laboratory units provided genomics data and dataframes.
 - The unit 2 is a Lab unit providing reads with expected depth of coverage (i.e. dataframe-unit2.csv)
 - The unit 3 is a Lab unit estimating the depth of coverage and GC content (i.e. files with the extension .unit3)
 # Launch the commands one after the other
-Keeping in mind the objectives of the three lab units, the commands of scripts BashDataManagement.sh and BashDataManagement.R can be launched one after the other in order to decipher each of its components.
+Keeping in mind the objectives of the three lab units, the commands of each script can be launched one after the other in order to decipher each of its components.
 ## From the Bash script opened with Gedit
 ```
 gedit BashDataManagement.sh
