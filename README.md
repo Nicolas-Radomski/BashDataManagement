@@ -13,7 +13,7 @@ The repository BashDataManagement provides key elements and training exercises t
 - echo (prints text to the terminal)
 - for (for)
 - gedit (text editor)
-- git
+- git (git)
 - grep (global regular expression print)
 - head (head)
 - join (join)
@@ -54,7 +54,7 @@ gedit BashDataManagement.sh
 rstudio BashDataManagement.R
 ```
 # Launch the whole scripts
-After having adapted the paths of working directories and output data, as well as commented the commands not anymore useful (i.e. connection, download, permission), the whole scripts can be launched using the same input data.
+After having adapted the paths of working directories and output data, as well as commented the commands not anymore useful (i.e. connection, download, permission), the whole scripts can be launched using the same input.
 ## From the Bash script with sh
 ```
 sh BashDataManagement.sh
