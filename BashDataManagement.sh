@@ -17,7 +17,7 @@ mkdir BashDataManagement
 ## creat a mounting point to the directory "BashDataManagment" from your browser to have access to data independantly of the shell
 sftp://??.??.??.???/path/to/user/BashDataManagement
 
-# retrieve input data and creat a directory to storage output data
+# retrieve input data and creat a directory to store output data
 ## move inside the working area
 cd BashDataManagement
 ## unpack the GitHub repository into a directory called repository

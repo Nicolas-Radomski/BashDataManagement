@@ -1,5 +1,5 @@
 # Usage
-The repository BashDataManagement provides key elements and training exercises to manage genomics data and dataframes through Bash (Bourne Again Shell) in the framework of a imaginary collaborative project between lab units dealing with fictitious input data.
+The repository BashDataManagement provides key elements and training exercises to manage genomics data and dataframes through Bash (Bourne Again Shell) in the framework of an imaginary collaborative project between lab units dealing with fictitious input data.
 - The Bash script BashDataManagement.sh aims at presenting the most useful Bash commands to manage genomics data and dataframes from different sources.
 - The R script BashDataManagement.R aims at performing statistical analyses from the output of the Bash script BashDataManagement.sh.
 # Dependencies
@@ -10,12 +10,14 @@ The repository BashDataManagement provides key elements and training exercises t
 - cd (change current working directory)
 - chmod (change mode)
 - cp (copy)
+- dos2unix (Unix/DOS text file format converter)
 - echo (prints text to the terminal)
 - for (for)
 - gedit (text editor)
 - git (git)
 - grep (global regular expression print)
 - head (head)
+- hexdump (hexadecimal viewer)
 - join (join)
 - ls (list)
 - mkdir (make directory)
@@ -28,6 +30,7 @@ The repository BashDataManagement provides key elements and training exercises t
 - scp (secure copy protocol)
 - ssh (secure shell)
 - touch (update the access date)
+- tr (translate)
 - unzip (extract files from a ZIP archive)
 ## R libraries
 - ggplot2
