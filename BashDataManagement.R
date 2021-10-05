@@ -4,7 +4,7 @@
 rm(list=ls())
 
 # set working directory
-setwd("/home/IZSNT/n.radomski/Documents/RstudioWorkingDirectory/BashDataManagement")
+setwd("/PathTo/RstudioWorkingDirectory/BashDataManagement")
 
 # install regular packages
 install.packages("ggplot2")
