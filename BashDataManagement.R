@@ -28,7 +28,7 @@ dim(data_long)
 # check 20 first lines
 head(data_long, 20)
 
-#check nature of variables (integer, factor or number)
+# check nature of variables (integer, factor or number)
 str(data_long)
 
 # answer to the question: Is there a correlation between the expected and estimated depth of coverage?
