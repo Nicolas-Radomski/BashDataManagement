@@ -63,7 +63,7 @@ dev.off()
 
 # => There is a significant (p-value < 2.2e-16) correlation (R2=99.98%) between the expected and estimated depth of coverage
 
-# answer to the question: Are there significance differences between GC% of genome types?
+# answer to the question: Are there significant differences between GC% of genome types?
 
 ## switch from long to short dataframe for Wilcoxon tests
 str(data_long)
