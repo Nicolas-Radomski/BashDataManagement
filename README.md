@@ -40,7 +40,7 @@ The repository BashDataManagement provides key elements and training exercises t
 # Objectives
 The objectives of three laboratory units aim at answering the questions below.
 - Is there a correlation between the expected and estimated depth of coverage?
-- Are there significance differences between GC% of genome types?
+- Are there significant differences between GC% of genome types?
 # Available input
 The three laboratory units provided genomics data and dataframes.
 - The Lab unit 1 is a bacteriology unit providing a transposed dataframe of genome types (i.e. dataframe-unit1-transposed.tsv)
