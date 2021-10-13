@@ -143,5 +143,5 @@ cat output/clean-dataframe.tsv | wc -l
 awk -F'\t' '{print NF}' output/clean-dataframe.tsv | sort -nu | tail -n 1
 ## rename the file clean-dataframe.tsv as dataframe.tsv
 mv output/clean-dataframe.tsv output/dataframe.tsv
-## save the file clean-dataframe.tsvin your computeur
+## save the file clean-dataframe.tsv in your computeur
 scp output/dataframe.tsv user@???.???.?.??:/path/to/RstudioWorkingDirectory/BashDataManagement/.
