@@ -56,16 +56,6 @@ gedit BashDataManagement.sh
 ```
 rstudio BashDataManagement.R
 ```
-# Launch the scripts
-After having adapted the paths of working directories and output data, as well as commented the commands not anymore useful (i.e. connection, download, permission), each script can be launched using the same input.
-## From the Bash script with sh
-```
-sh BashDataManagement.sh
-```
-## From the R script with R
-```
-r BashDataManagement.R
-```
 # Expected output
 The expected conclusions are described below.
 - There is a significant (p-value < 2.2e-16) correlation (R2=99.98%) between the expected and estimated depth of coverage
