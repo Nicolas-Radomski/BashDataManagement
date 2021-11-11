@@ -5,19 +5,19 @@ set -euo pipefail # exit with a non-zero status in the second line
 
 #### Bash-based data management ####
 
-# connect to a server and creat a mounting point to a personnal working area
+# connect to a server and create a mounting point to a personnal working area
 ## connect to a server
 ssh user@??.??.??.???
 ## move into the personal area
 cd /path/to/user/
 ## check the position of navigation
 pwd
-## creat a directory dedicated to the training
+## create a directory dedicated to the training
 mkdir BashDataManagement
-## creat a mounting point to the directory "BashDataManagment" from your browser to have access to data independantly of the shell
+## create a mounting point to the directory "BashDataManagment" from your browser to have access to data independantly of the shell
 sftp://??.??.??.???/path/to/user/BashDataManagement
 
-# retrieve input data and creat a directory to store output data
+# retrieve input data and create a directory to store output data
 ## move inside the working area
 cd BashDataManagement
 ## unpack the GitHub repository into a directory called repository
@@ -30,15 +30,15 @@ unzip input.zip
 rm -rf repository/
 ## remove the useless file called input.zip
 rm input.zip
+## open the execution permission to the user
+chmod -R u+x input/
 ## open the reading permission to the user
 chmod -R u+r input/
 ## open the writing permission to the user
 chmod -R u+w input/
-## open the execution permission to the user
-chmod -R u+x input/
 ## check the files available into the directory input
 ls input/
-## creat a directory to store output data
+## create a directory to store output data
 mkdir output
 
 # clean the file dataframe-unit1.tsv
