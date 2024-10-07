@@ -8,6 +8,8 @@ setwd("/PathTo/RstudioWorkingDirectory/BashDataManagement")
 
 # install regular packages
 install.packages("ggplot2")
+install.packages("renv") # for R < 4.4
+renv::install("MASS@7.3-60.0.1") # for R < 4.4
 install.packages("ggpmisc")
 install.packages("reshape2")
 install.packages("plyr")
