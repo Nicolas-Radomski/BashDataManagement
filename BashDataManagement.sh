@@ -45,7 +45,7 @@ mkdir output
 ## check if the file is from windows or linux (i.e. "\r\n" for windows or "\n" for linux)
 hexdump -c input/dataframe-unit1-transposed.tsv
 ## install dos2unix in needed
-sudo apt install -y dos2unix
+sudo apt install dos2unix
 ## pass from windows to linux if necessary
 dos2unix input/dataframe-unit1-transposed.tsv
 ## open the file dataframe-unit1-transposed.tsv and notice that the corresponding dataframe is transposed
