@@ -30,12 +30,12 @@ unzip input.zip
 rm -rf repository/
 ## remove the useless file called input.zip
 rm input.zip
+## open the execution permission to the user
+chmod -R u+x input/
 ## open the reading permission to the user
 chmod -R u+r input/
 ## open the writing permission to the user
 chmod -R u+w input/
-## open the execution permission to the user
-chmod -R u+x input/
 ## check the files available into the directory input
 ls input/
 ## create a directory to store output data
