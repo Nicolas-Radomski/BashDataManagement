@@ -64,7 +64,7 @@ grep -v 'sample-00016' output/dataframe-unit1.tsv > output/clean-dataframe-unit1
 more output/clean-dataframe-unit1.tsv
 ## check the number of lines of the file clean-dataframe-unit1.tsv (i.e. 16 lines)
 cat output/clean-dataframe-unit1.tsv | wc -l
-## check the number of colomns of the file clean-dataframe-unit1.tsv (i.e. 2 colomns)
+## check the number of columns of the file clean-dataframe-unit1.tsv (i.e. 2 columns)
 awk -F'\t' '{print NF}' output/clean-dataframe-unit1.tsv | sort -nu | tail -n 1
 
 # clean the file dataframe-unit2.tsv
@@ -84,7 +84,7 @@ sort -t ',' -k1,1 output/clean-dataframe-unit2.csv | tr ',' '\t' > output/clean-
 more output/clean-dataframe-unit2.tsv
 ## check the number of lines of the file clean-dataframe-unit2.tsv (i.e. 16 lines)
 cat output/clean-dataframe-unit2.tsv | wc -l
-## check the number of colomns of the file clean-dataframe-unit2.tsv (i.e. 2 colomns)
+## check the number of columns of the file clean-dataframe-unit2.tsv (i.e. 2 columns)
 awk -F'\t' '{print NF}' output/clean-dataframe-unit2.tsv | sort -nu | tail -n 1
 
 # creat and clean the file dataframe-unit3.tsv
@@ -98,13 +98,13 @@ rm input/sample-00016.unit3
 ## notice that the unit3 provided tsv files with extentions .unit3, combine them, and save it in the output directory as dataframe-unit3-V1.tsv
 ll input/
 grep . input/*.unit3 > output/dataframe-unit3-V1.tsv
-## notice that the colomn 1 and 2 of the file dataframe-unit3-V1.tsv are separated with double dots, replace them with tab separators, then save it in the output directory as dataframe-unit3-V2.tsv
+## notice that the columns 1 and 2 of the file dataframe-unit3-V1.tsv are separated with double dots, replace them with tab separators, then save it in the output directory as dataframe-unit3-V2.tsv
 more output/dataframe-unit3-V1.tsv
 sed 's@:@\t@'g output/dataframe-unit3-V1.tsv > output/dataframe-unit3-V2.tsv
-## notice that the the strings 'input/' and '.init3' are useless in the sample identifiers (i.e. colomn 1), remove them, then save it in the output directory as dataframe-unit3-V3.tsv
+## notice that the the strings 'input/' and '.init3' are useless in the sample identifiers (i.e. column 1), remove them, then save it in the output directory as dataframe-unit3-V3.tsv
 more output/dataframe-unit3-V2.tsv
 sed 's@input/@@'g output/dataframe-unit3-V2.tsv | sed 's@.unit3@@'g > output/dataframe-unit3-V3.tsv
-## notice that the file dataframe-unit3-V3.tsv have multiple header, remove them (i.e. dataframe-unit3-V4.tsv), save a single header (i.e. dataframe-unit3-V4-header.tsv) and combine both (i.e. dataframe-unit3-V5.tsv)
+## notice that the file dataframe-unit3-V3.tsv has multiple header, remove them (i.e. dataframe-unit3-V4.tsv), save a single header (i.e. dataframe-unit3-V4-header.tsv) and combine both (i.e. dataframe-unit3-V5.tsv)
 ### check the multiple headers of the file dataframe-unit3-V3.tsv
 more output/dataframe-unit3-V3.tsv
 ### keep the lines without the string '#ID' of the file dataframe-unit3-V3.tsv, then save it in the output directory as dataframe-unit3-V4.tsv
@@ -113,13 +113,13 @@ grep -v '#ID' output/dataframe-unit3-V3.tsv > output/dataframe-unit3-V4.tsv
 sed -n '1p' output/dataframe-unit3-V3.tsv | sed 's@sample-00001@sample@'g > output/dataframe-unit3-V4-header.tsv
 ### combine the header (i.e. dataframe-unit3-V4-header.tsv) and dataframe (i.e. output/dataframe-unit3-V4.tsv)
 cat output/dataframe-unit3-V4-header.tsv output/dataframe-unit3-V4.tsv > output/dataframe-unit3-V5.tsv
-## identify colomns of interest: sample (i.e. colomn 1 called sample), GC% (i.e. colomn 10 called Read_GC) and depth of coverage (i.e. colomn 11 called Median_fold)
+## identify columns of interest: sample (i.e. column 1 called sample), GC% (i.e. column 10 called Read_GC) and depth of coverage (i.e. column 11 called Median_fold)
 head -1 output/dataframe-unit3-V5.tsv | tr '\t' '\n' | nl
-## extract the colomns of interest from the file dataframe-unit3-V5.tsv (i.e. 1, 10 and 11), correct fields of the header, then save it in output directory as dataframe-unit3-V1.tsv
+## extract the columns of interest from the file dataframe-unit3-V5.tsv (i.e. 1, 10 and 11), correct fields of the header, then save it in output directory as dataframe-unit3-V1.tsv
 cut -d$'\t' -f1,10,11 output/dataframe-unit3-V5.tsv | sed 's@Read_GC@GC@'g | sed 's@Median_fold@estimated_depth@'g > output/clean-dataframe-unit3.tsv
 ## check the number of lines of the file clean-dataframe-unit3.tsv (i.e. 16 lines)
 cat output/clean-dataframe-unit3.tsv | wc -l
-## check the number of colomns of the file clean-dataframe-unit3.tsv (i.e. 3 colomns)
+## check the number of columns of the file clean-dataframe-unit3.tsv (i.e. 3 columns)
 awk -F'\t' '{print NF}' output/clean-dataframe-unit3.tsv | sort -nu | tail -n 1
 
 # join the clean dataframes from the three units
@@ -131,7 +131,7 @@ sed '1d' output/clean-dataframe-unit3.tsv > output/clean-dataframe-unit3-noheade
 join -t $'\t' -1 1 -2 1 output/clean-dataframe-unit1-noheader.tsv output/clean-dataframe-unit2-noheader.tsv -a 2 > output/clean-dataframe-unit1-unit2-noheader.tsv
 ## join of the files output/clean-dataframe-unit1-unit2-noheader.tsv and clean-dataframe-unit3-noheader.tsv
 join -t $'\t' -1 1 -2 1 output/clean-dataframe-unit1-unit2-noheader.tsv output/clean-dataframe-unit3-noheader.tsv -a 2 > output/clean-dataframe-unit1-unit2-unit3-noheader.tsv
-## creat a header with colomns of interest
+## creat a header with columns of interest
 touch output/header-clean-dataframe.csv | echo sample,genome_type,expected_depth,GC_content,estimated_depth >> output/header-clean-dataframe.csv
 ## transform the header csv into tsv
 cat output/header-clean-dataframe.csv | tr ',' '\t' > output/header-clean-dataframe.tsv
@@ -141,7 +141,7 @@ cat output/header-clean-dataframe.tsv output/clean-dataframe-unit1-unit2-unit3-n
 more output/clean-dataframe.tsv
 ## check the number of lines of the file clean-dataframe.tsv (i.e. 16 lines)
 cat output/clean-dataframe.tsv | wc -l
-## check the number of colomns of the file clean-dataframe.tsv (i.e. 5 colomns)
+## check the number of columns of the file clean-dataframe.tsv (i.e. 5 columns)
 awk -F'\t' '{print NF}' output/clean-dataframe.tsv | sort -nu | tail -n 1
 ## rename the file clean-dataframe.tsv as dataframe.tsv
 mv output/clean-dataframe.tsv output/dataframe.tsv
